@@ -1,0 +1,253 @@
+html{
+  background-image: url("../images/backg.jpg");
+  background-position:center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Navigation links custom classes manipulation*/
+.sidenav{
+  background: transparent;
+}
+.sidenav li a, .sidenav li a i.material-icons{
+  /* Text made white */
+  color: white!important;
+}
+.sidenav-trigger>i{
+  color: white;
+}
+.sidenav>li>a>img{
+  border-radius: 50%;
+  height: 150px;
+  /* display: none; */
+}
+
+/* ABOUT US LINK */
+.aboutus{
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 30px;
+  background-color: #81d4fa;
+}
+.aboutus a{
+  font-size: 1em!important;
+}
+.aboutus a:hover{
+  background-color: #b3e5fc!important;
+}
+
+#live{
+  /* display: none; */
+}
+
+/* Collapsible menu; live to gallery */
+.collapsible, .collapsible-body{
+  background: transparent!important;
+}
+.collapsible-body ul li{
+  margin-left: 30px;
+}
+
+.sidenav .collapsible-header:hover,.sidenav li a:hover,.collapsible .active li:hover,.collapsible-header:focus{
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  background-color: rgba(100, 100, 100, 0.5);
+  /* vertical-align: middle; */
+}
+li.bold.active,.sidenav>li>.logo:hover{
+  background: transparent;
+}
+
+/* ABOUT US BUTTON WHEN ACTIVE */
+li.active>a.about{
+  color: rgb(41, 98, 255)!important;
+  background: white;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+.collapsible .active{
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  background-color: rgba(100, 100, 100, 0.5);
+}
+/* Material Icons; removing the float and vertical alignment */
+i.material-icons{
+  float: none!important;
+  vertical-align: bottom;
+  /* position: ; */
+}
+
+/* Disabled link; especially the live link */
+.disabled{
+  pointer-events: none;
+  /* background-color: rgba(250, 250, 250, 0.5); */
+}
+.section{
+  margin: 0 auto;
+}
+
+/* LIMITING THE WIDTH OF THE CONTAINER */
+.container{
+  margin:0 auto;
+  max-width:1280px;
+  width:90%
+}
+
+/* The Breadcrumb */
+.theBreadcrumb{
+  background: transparent!important;
+}
+.theBreadcrumb a{
+  color: #01579b
+}
+/* from ghpages */
+.breadcrumb:last-child{
+  color: rgb(0, 176, 255);
+}
+.breadcrumb:before{
+  /* color:rgba(255,255,255,0.7); */
+  color: #607d8b;
+}
+
+footer{
+  color: white;
+  /* position: fixed; */
+}
+
+/* Sermons Section */
+.sermonLinks{
+  color: rgb(3, 169, 244);
+}
+.sectionSermon p{
+  color: #673ad7;
+}
+.sectionSermon i{
+  border-radius: 7px;
+}
+.sectionSermon a{
+  color: rgb(255, 215, 0);
+}
+.lineBreak{
+  color: #03a9f4;
+}
+iframe{
+  max-width: 100%;
+}
+
+/* Sermon homepage golden nuggets */
+p.small{
+  font-size: .8em!important;
+}
+
+/* Navigation for small devices */
+.navVito a i{
+  -webkit-box-shadow:0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3);
+  box-shadow:0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3);
+  background-color: #2196F3 ;
+  color: white;
+  border-radius: 7px;
+  vertical-align: middle;
+}
+
+/* MUSIC VIDEOS */
+.music_video .container{
+  padding-top: 9px;
+}
+
+/* MUSIC AUDIO */
+#audioMusic{
+  display: none;
+}
+
+/* THE GALLERY */
+.albums .col{
+  background-color: white;
+  margin: 4px auto;
+}
+.albums .btn{
+  text-transform: none;
+  font-size: 1em;
+  border-radius: 15px;
+}
+
+/* Album photos background */
+.photos .col{
+  background-color: #0091ea;
+}
+
+
+
+@media (max-width: 992px) {
+  .sidenav{
+    background-color: rgba(41, 98, 255, 0.7);
+  }
+  .section{
+    margin: 0 auto;
+  }
+}
+
+
+/* Before */
+.section{
+  background: rgba(240, 240, 240, 0.9);
+}
+
+#theme{
+  text-align: center;
+}
+/* who we are */
+.card-panel img{
+  padding: 5px;
+}
+
+/* Slider */
+.indicator-item{
+  display: none !important;
+}
+
+/* Bible Quotes */
+e{
+  font-style: italic;
+}
+
+/* Disabled Breadcrumb color */
+#myFlat{
+  color: white!important;
+}
+
+/* Teachings  */
+h4,h5{
+  text-transform: capitalize;
+}
+p {
+  font-size: 1.1em !important;
+}
+
+.teaching{
+  border-style: ridge;
+  padding: 3px;
+}
+
+.title{
+  color: white;
+  text-decoration: underline;
+}
+
+h6{
+  font-size: 1.5em;
+  font-weight: none;
+  text-decoration: underline;
+}
+.clearfix{
+  margin-bottom: 3px;
+}
