@@ -1,0 +1,23 @@
+---
+layout : default
+---
+<!-- Top Position -->
+<div id="top"></div>
+{% include breadcrumb.html %}
+
+<section class="section blue lighten-2">
+  <div class="container">
+    <button class="btn blue lighten-3"><i class="material-icons">person</i> Bro. Richard Irungu</button>
+    <div class="teaching col s12">
+      <a href="../index.html" class="hide-on-large-only btn blue accent-4"><i class="material-icons white-text">arrow_back</i></a>
+      <h4 class="center title white-text">{{ page.heading}}</h4>
+
+      <!-- Contents -->
+      <div class="contents blue lighten-3 z-depth-2">
+        {{ content }}
+        <a href="#top" class="btn blue accent-4"><i class="material-icons white-text">arrow_upward</i></a>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</section>

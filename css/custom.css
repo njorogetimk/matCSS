@@ -41,7 +41,7 @@ html{
 }
 
 #live{
-  /* display: none; */
+  display: none;
 }
 
 /* Collapsible menu; live to gallery */
@@ -185,6 +185,12 @@ p.small{
   background-color: #0091ea;
 }
 
+/* Opera images */
+.opera img{
+  height : 400px;
+  text-align: center;
+}
+
 
 
 @media (max-width: 992px) {
@@ -247,6 +253,15 @@ h6{
   font-size: 1.5em;
   font-weight: none;
   text-decoration: underline;
+}
+#featured .tranc h5, #more .tranc h5{
+  display: none;
+}
+#featured .tranc p{
+  color: white;
+}
+#more .tranc p {
+  color: #03a9f4;
 }
 .clearfix{
   margin-bottom: 3px;

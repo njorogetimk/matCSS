@@ -3,7 +3,7 @@ var domain = document.location.host;
 var newRoot;
 var root = document.getElementById('logo-container');
 var root2 = document.querySelector('.breadcrumb');
-console.log(root2);
+// console.log(root2);
 
 switch (domain) {
   case 'njorogetimk.github.io':newRoot="/website";
@@ -20,6 +20,18 @@ switch (domain) {
   default:
   break;
 }
+
+
+// Opera Mini Browser detection
+var isOperaMini = (navigator.userAgent.indexOf('Opera Mini') > -1);
+if (isOperaMini == false) {
+  var opera = document.getElementById('opera');
+  if (opera != null) {
+    opera.style.display = 'none';
+  }
+
+}
+
 
 // navigation Bar
 document.addEventListener('DOMContentLoaded', function() {
