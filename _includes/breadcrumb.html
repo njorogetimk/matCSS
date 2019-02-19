@@ -1,0 +1,15 @@
+<!-- The Breadcrumb -->
+<section class="section hide-on-med-and-down" id="top">
+  <nav class="theBreadcrumb">
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <a href="/" class="breadcrumb">Home</a>
+        <a href="../index.html" class="breadcrumb">Teachings</a>
+        <a href="" class="breadcrumb disabled">Godhead</a>
+        {% for link in links %%}
+        <a href="link.url" class="breadcrumb {{link.dbl}}">link.linkpage</a>
+        {% endfor%}
+      </div>
+    </div>
+  </nav>
+</section>
