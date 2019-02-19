@@ -4,7 +4,19 @@ category : teachings
 ---
 <!-- Top Position -->
 <div id="top"></div>
-{% include breadcrumb.html %}
+
+<!-- The Breadcrumb -->
+<section class="section hide-on-med-and-down">
+  <nav class="theBreadcrumb">
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <a href="/" class="breadcrumb">Home</a>
+        <a href="../index.html" class="breadcrumb">Teachings</a>
+        <a href="" class="breadcrumb disabled">{{page.title | remove: "| Teachings"}}</a>
+      </div>
+    </div>
+  </nav>
+</section>
 
 <section class="section blue lighten-2">
   <div class="container">
