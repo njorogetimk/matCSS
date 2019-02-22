@@ -35,21 +35,35 @@ if (isOperaMini == false) {
 
 // navigation Bar
 document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, {});
-  });
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems, {preventScrolling:true});
+});
 // Collapsible menus in sidenav
 document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems, {});
-  });
+  var elems = document.querySelectorAll('.collapsible');
+  var instances = M.Collapsible.init(elems, {});
+});
 // Slider
 // Slider
 document.addEventListener('DOMContentLoaded', function() {
   var slider = document.querySelectorAll('.slider');
   var instances = M.Slider.init(slider, {});
 });
+
+// material boxed
 document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.materialboxed');
-    var instances = M.Materialbox.init(elems, {});
-  });
+  var elems = document.querySelectorAll('.materialboxed');
+  var instances = M.Materialbox.init(elems, {});
+});
+
+// Collapsible menus in sidenav
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.newCollapsible');
+  var instances = M.Collapsible.init(elems, {});
+});
+
+// Dropdown
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.dropdown-trigger');
+  var instances = M.Dropdown.init(elems, { constrainWidth:false, hover:true, coverTrigger:false});
+});

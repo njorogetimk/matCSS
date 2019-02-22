@@ -1,0 +1,24 @@
+---
+layout : sermons
+---
+
+{% if page.paginate == 'two' %}
+  {% assign link='golden_nuggets_2.html' %}
+{% elsif page.paginate == 'three'%}
+  {% assign link='golden_nuggets_3.html' %}
+{% else %}
+  {% assign link='golden_nuggets.html'%}
+{% endif %}
+
+<section class="section sectionSermon">
+  <div class="container">
+    <a href="/sermons/series/{{link}}" class="z-depth-3"><i class="blue white-text material-icons">navigate_before</i></a>
+    <h5 class="blue-text">{{page.heading}}</h5>
+  </div>
+</section>
+
+<section class="section frames z-depth-2 light-blue accent-4">
+  <div class="container">
+    {{content}}
+  </div>
+</section>

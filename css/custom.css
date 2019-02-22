@@ -191,6 +191,19 @@ p.small{
   text-align: center;
 }
 
+/* Pagination color */
+.pagination li a{
+  color: #fff;
+}
+.pagination li.active a{
+  color: #fff;
+}
+.pagination li.active{
+  background-color: #82b1ff;
+}
+.pagination li.disabled a{
+  color:#fff;
+}
 
 
 @media (max-width: 992px) {
