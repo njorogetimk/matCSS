@@ -1,2 +1,2 @@
-baseurl : /website
-url : njorogetimk.github.io
+production_url : https://njorogetimk.github.io/website
+BASE_PATH : https://njorogetimk.github.io/website
