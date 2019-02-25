@@ -18,23 +18,25 @@ title : Vito vya Bibilia | Series
       {% assign my_counter=0 %}
       {% for article in site.pages %}
         {% if article.layout == 'sermons_vito' %}
-          {% if three == 0 and my_counter != 0 %}
-          <hr class="col s12 hide-on-med-and-down">
-          {% endif %}
-          {% if two == 0 and my_counter != 0%}
-          <hr class="col s12 hide-on-large-only hide-on-small-only">
-          {% endif %}
+          {% if my_counter > 41 %}
+            {% if three == 0 and my_counter > 44%}
+              <hr class="col s12 hide-on-med-and-down">
+            {% endif %}
+            {% if two == 0 and my_counter > 44 %}
+              <hr class="col s12 hide-on-large-only hide-on-small-only">
+            {% endif %}
 
-          <div class="col s12 m6 l4 vito">
-            <p><a href="{{site.baseurl}}{{article.url}}{{article.url}}">{{article.heading}}</a></p>
-          </div>
+            <div class="col s12 m6 l4 vito">
+              <p><a href="{{site.baseurl}}{{article.url}}{{article.url}}">{{article.heading}}</a></p>
+            </div>
+          {% endif %}
 
           {% assign my_counter = my_counter | plus: 1 %}
           {% assign two = my_counter | modulo:2 %}
           {% assign three = my_counter | modulo:3 %}
 
         {% endif %}
-        {% if my_counter == 21 %}
+        {% if my_counter == 63 %}
           {% break %}
         {% endif %}
       {% endfor %}
@@ -43,9 +45,9 @@ title : Vito vya Bibilia | Series
 
   <div class="container">
     <ul class="pagination">
-      <li class="active disabled z-depth-2"><a href="#!">1</a></li>
-      <li class="waves-effect z-depth-2 light-blue"><a href="golden_nuggets_2.html">2</a></li>
-      <li class="wave-effect z-depth-2 light-blue"><a href="golden_nuggets_3.html">3</a></li>
+      <li class="waves-effect z-depth-2 light-blue"><a href="golden_nuggets.html">1</a></li>
+      <li class="wave-effect z-depth-2 light-blue"><a href="golden_nuggets_2.html">2</a></li>
+      <li class="active disabled z-depth-2"><a href="#!">3</a></li>
     </ul>
   </div>
 
