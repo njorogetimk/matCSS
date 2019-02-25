@@ -1,2 +1,1 @@
-baseurl: "/website" # the subpath of your site, e.g. /blog
-url: "https://njorogetimk.github.io"
+baseurl: "/website" 
