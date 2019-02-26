@@ -208,8 +208,21 @@ p.small{
 
 .our_name{
   font-family: Lobster two;
-  font-size: 24px;
-  color: rgba(0,0,255,1);
+  font-size: 30px;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.our_name img{
+  margin-top: 3px;
+  margin-bottom: 0px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.our_name p{
+  margin-top: 0;
+  margin-bottom: 0;
 }
 @media (max-width: 992px) {
   .sidenav{
