@@ -3,7 +3,7 @@ Following the commission of _Mark.16:15_ we as Capstone Message Tabernacle embar
 
 ## Installation and Usage
 Development of the site was done in _HTML_, _CSS_ and _JavaScript_. Page generation was achieved using Jekyll. Jekyll is a simple, extendable, static site generator. The installation instructions are on the [Jekyll Website](https://jekyllrb.com/docs/).  
-The commands are run on a terminal or command prompt
+The commands (_in italics_) are run on a terminal or command prompt
 
 #### 1. Install Ruby
 Jekyll is a Ruby Gem. Follow the [instructions](https://jekyllrb.com/docs/installation/) on this page to install Ruby on your system.
@@ -26,8 +26,8 @@ _gem install jekyll bundler_
 The team of contributors who have played an important role include: Sis. Elizabeth Njoki for initiating this project with great help from Bro. Silas Maina. Bro. Wesly Tanui, created the [youtube channel](https://www.youtube.com/channel/UCNMWw2o7Ahu1x-A_PphKmzg)
 
 ## Credits
-All glory and honour is to the Almighty God ,for His guidance.  
-Also many thanks goes to our pastor, who has been instrumental in providing the necessary guidance.
+All glory and honour goes to the Almighty God.  
+Also many thanks to our pastor, who has been instrumental in providing the necessary guidance.
 
 
 ## Inquiries
