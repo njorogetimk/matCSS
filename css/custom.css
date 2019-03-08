@@ -1,5 +1,6 @@
 html{
-  background-image: url("../images/backg.jpg");
+  /* background-image: url("../images/backg.jpg"); */
+  background-color: rgba(41, 98, 255, 0.7);
   background-position:center;
   background-size: cover;
   background-attachment: fixed;
