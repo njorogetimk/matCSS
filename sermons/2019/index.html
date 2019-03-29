@@ -12,12 +12,12 @@ title : 2019 | sermons
     <h3 class="center white-text">2019 Sermons</h3>
     <div class="row">
       {% assign my_counter=0 %}
-      {% for article in site.pages %}
-        {% if article.layout == 'sermons_sunday' and article.title contains 2019 %}
+      {%- for article in site.pages -%}
+        {%- if article.layout == 'sermons_sunday' and article.title contains 2019 -%}
 
-          {% if two == 0 and my_counter != 0%}
+          {%- if two == 0 and my_counter != 0-%}
           <hr class="col s12 hide-on-large-only hide-on-small-only">
-          {% endif %}
+          {%- endif -%}
 
           <div class="col s12 m6 vito z-depth-2">
             <p><a href="{{site.baseurl}}{{article.url}}">{{ article.heading }}</a></p>
@@ -27,11 +27,11 @@ title : 2019 | sermons
           {% assign my_counter = my_counter | plus: 1 %}
           {% assign two = my_counter | modulo:2 %}
 
-        {% endif %}
-        {% if my_counter == 21 %}
-          {% break %}
-        {% endif %}
-      {% endfor %}
+        {%- endif -%}
+        {%- if my_counter == 21 -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
     </div>
   </div>
 

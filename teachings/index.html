@@ -21,8 +21,8 @@ title : Teachings
       <div class="row tranc">
         <h2 class="white-text center">Featured Articles</h2>
           {% assign my_counter = 0%}
-          {% for article in site.pages reversed%}
-            {% if article.teachings_type contains 'featured' %}
+          {%- for article in site.pages reversed -%}
+            {%- if article.teachings_type contains 'featured' -%}
               <div class="col s12 m6 l4">
                 <h4 class="center">{{article.title | remove: '| Teachings'}}</h4>
                 <p>{{article.content | truncate: article.tranc}}</p>
@@ -30,11 +30,11 @@ title : Teachings
               </div>
               {% assign my_counter = my_counter | plus: 1 %}
               {% assign two = my_counter | modulo:2 %}
-              {% if two == 0 and my_counter != 0 %}
+              {%- if two == 0 and my_counter != 0 -%}
               <hr class="col s12 hide-on-small-only hide-on-large-only">
-              {% endif %}
-            {% endif %}
-          {% endfor %}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
       </div>
     </div>
   </div>
@@ -44,24 +44,24 @@ title : Teachings
   <div class="container z-depth-2">
     <div class="row tranc">
       {% assign my_counter = 0%}
-      {% for article in site.pages reversed%}
-        {% if article.teachings_type contains 'other' %}
-          {% if three == 0 and my_counter != 0 %}
+      {%- for article in site.pages reversed -%}
+        {%- if article.teachings_type contains 'other' -%}
+          {%- if three == 0 and my_counter != 0 -%}
           <hr class="col s12 hide-on-med-and-down">
-          {% endif %}
-          {% if two == 0 and my_counter != 0%}
+          {%- endif -%}
+          {%- if two == 0 and my_counter != 0 -%}
           <hr class="col s12 hide-on-large-only hide-on-small-only">
-          {% endif %}
+          {%- endif -%}
           <div class="col s12 m6 l4">
             <h4 class="center">{{article.title | remove: '| Teachings'}}</h4>
             <p>{{article.content | truncate: article.tranc}}</p>
             <a href="{{site.baseurl}}{{article.url}}" class="btn white-text">Read More</a>
           </div>
-          {% assign my_counter = my_counter | plus: 1 %}
+          {%- assign my_counter = my_counter | plus: 1 -%}
           {% assign two = my_counter | modulo:2 %}
           {% assign three = my_counter | modulo:3 %}
-        {% endif %}
-      {% endfor %}
+        {%- endif -%}
+      {%- endfor -%}
     </div>
   </div>
 </section>

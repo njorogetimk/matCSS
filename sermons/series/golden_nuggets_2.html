@@ -16,30 +16,30 @@ title : Vito vya Bibilia | Series
   <div class="container light-blue z-depth-2">
     <div class="row">
       {% assign my_counter=0 %}
-      {% for article in site.pages %}
-        {% if article.layout == 'sermons_vito' %}
-          {% if my_counter > 20 %}
-            {% if three == 0 and my_counter > 23%}
+      {%- for article in site.pages -%}
+        {%- if article.layout == 'sermons_vito' -%}
+          {%- if my_counter > 20 -%}
+            {%- if three == 0 and my_counter > 23-%}
               <hr class="col s12 hide-on-med-and-down">
-            {% endif %}
-            {% if two == 0 and my_counter > 23 %}
+            {%- endif -%}
+            {%- if two == 0 and my_counter > 23 -%}
               <hr class="col s12 hide-on-large-only hide-on-small-only">
-            {% endif %}
+            {%- endif -%}
 
             <div class="col s12 m6 l4 vito">
               <p><a href="{{site.baseurl}}{{article.url}}">{{article.heading}}</a></p>
             </div>
-          {% endif %}
+          {%- endif -%}
 
           {% assign my_counter = my_counter | plus: 1 %}
           {% assign two = my_counter | modulo:2 %}
           {% assign three = my_counter | modulo:3 %}
 
-        {% endif %}
-        {% if my_counter == 42 %}
-          {% break %}
-        {% endif %}
-      {% endfor %}
+        {%- endif -%}
+        {%- if my_counter == 42 -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
     </div>
   </div>
 
