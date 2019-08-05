@@ -1,0 +1,21 @@
+---
+layout : default
+title : Music | Audios
+---
+
+<section class="section">
+  <div class="container">
+    <a href="index.html" class="albums"><i class="material-icons">audiotrack</i> Home</a>
+    <h4>Albums</h4>
+    <hr>
+    <div class="row">
+      {%- for article in site.pages -%}
+        {%- if article.genre == 'audio' -%}
+          <div class="col s12 m6">
+            <a href="{{site.baseurl}}{{article.url}}" class="btn"><i class="material-icons">album</i>  {{article.album}}</a>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
