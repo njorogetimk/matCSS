@@ -10,6 +10,9 @@ html{
 .sidenav{
   background: transparent;
 }
+.sidenav li{
+  line-height: normal;
+}
 .sidenav li a, .sidenav li a i.material-icons{
   /* Text made white */
   color: white!important;
@@ -21,6 +24,9 @@ html{
   border-radius: 50%;
   height: 150px;
   /* display: none; */
+}
+.sidenav a {
+  font-size: 1.1rem!important;
 }
 
 /* ABOUT US LINK */
@@ -283,7 +289,7 @@ h4,h5{
   text-transform: capitalize;
 }
 p {
-  font-size: 1.1em !important;
+  font-size: 1.3em !important;
 }
 
 .teaching{
