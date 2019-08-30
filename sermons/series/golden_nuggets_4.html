@@ -18,11 +18,11 @@ title : Vito vya Bibilia | Series
       {% assign my_counter=0 %}
       {%- for article in site.pages -%}
         {%- if article.layout == 'sermons_vito' -%}
-          {%- if my_counter > 20 -%}
-            {%- if three == 0 and my_counter > 23-%}
+          {%- if my_counter > 62 -%}
+            {%- if three == 0 and my_counter > 65-%}
               <hr class="col s12 hide-on-med-and-down">
             {%- endif -%}
-            {%- if two == 0 and my_counter > 23 -%}
+            {%- if two == 0 and my_counter > 65 -%}
               <hr class="col s12 hide-on-large-only hide-on-small-only">
             {%- endif -%}
 
@@ -36,7 +36,7 @@ title : Vito vya Bibilia | Series
           {% assign three = my_counter | modulo:3 %}
 
         {%- endif -%}
-        {%- if my_counter == 42 -%}
+        {%- if my_counter == 84 -%}
           {%- break -%}
         {%- endif -%}
       {%- endfor -%}
@@ -46,9 +46,9 @@ title : Vito vya Bibilia | Series
   <div class="container">
     <ul class="pagination">
       <li class="waves-effect z-depth-2 light-blue"><a href="golden_nuggets.html">1</a></li>
-      <li class="active disabled z-depth-2"><a href="#!">2</a></li>
+      <li class="wave-effect z-depth-2 light-blue"><a href="golden_nuggets_2.html">2</a></li>
       <li class="wave-effect z-depth-2 light-blue"><a href="golden_nuggets_3.html">3</a></li>
-      <li class="wave-effect z-depth-2 light-blue"><a href="golden_nuggets_4.html">4</a></li>
+      <li class="active disabled z-depth-2"><a href="#!">4</a></li>
     </ul>
   </div>
 
