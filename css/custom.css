@@ -256,6 +256,15 @@ p.small{
 }
 
 
+/* Homepage Image */
+.homepage-img{
+  /* height: 400px; */
+  /* background-color:#9e9e9e;
+  margin:0;
+  height:400px; */
+}
+
+
 /* Before */
 .section{
   background: rgba(240, 240, 240, 0.9);
