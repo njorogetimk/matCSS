@@ -9,7 +9,7 @@ title : 2019 | sermons
 <!-- SERMONS -->
 <div class="section sectionSermon">
   <div class="container light-blue z-depth-2">
-    <h3 class="center white-text">2019 Sermons</h3>
+    <h3 style="text-decoration: underline;" class="center white-text">2019 Sermons</h3>
     <div class="row">
       {% assign my_counter=0 %}
       {%- for article in site.pages -%}
@@ -19,9 +19,10 @@ title : 2019 | sermons
           <hr class="col s12 light-blue-text hide-on-small-only">
           {%- endif -%}
 
-          <div class="col s12 m6 vito z-depth-2">
+          <div class="col s12 m6 vito">
             <p><a href="{{site.baseurl}}{{article.url}}">{{ article.heading }}</a></p>
             <p>{{ article.date }}</p>
+            <hr class="hide-on-med-and-up light-blue-text">
           </div>
 
           {% assign my_counter = my_counter | plus: 1 %}
@@ -32,12 +33,4 @@ title : 2019 | sermons
       {%- endfor -%}
     </div>
   </div>
-
-  <!-- <div class="container">
-    <ul class="pagination">
-      <li class="active disabled z-depth-2"><a href="#!">1</a></li>
-      <li class="waves-effect z-depth-2 light-blue"><a href="golden_nuggets_2.html">2</a></li>
-    </ul>
-  </div> -->
-
 </div>

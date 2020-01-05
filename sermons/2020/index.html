@@ -1,0 +1,35 @@
+---
+layout : default
+title : 2020 | sermons
+---
+
+{% include sermon_intro.html %}
+{% include sermon_dropdown.html %}
+
+<!-- SERMONS -->
+<div class="section sectionSermon">
+    <div class="container light-blue z-depth-2">
+        <h3 style="text-decoration: underline;" class="center white-text">2020 Sermons</h3>
+        <div class="row">
+            {% assign my_counter=0 %}
+            {%- for article in site.pages -%}
+            {%- if article.layout == 'sermons_sunday' and article.title contains 2020 -%}
+
+            {%- if two == 0 and my_counter != 0-%}
+            <hr class="col s12 light-blue-text hide-on-small-only">
+            {%- endif -%}
+
+            <div class="col s12 m6 vito z-depth-2">
+                <p><a href="{{site.baseurl}}{{article.url}}">{{ article.heading }}</a></p>
+                <p>{{ article.date }}</p>
+            </div>
+
+            {% assign my_counter = my_counter | plus: 1 %}
+            {% assign two = my_counter | modulo:2 %}
+
+            {%- endif -%}
+
+            {%- endfor -%}
+        </div>
+    </div>
+</div>

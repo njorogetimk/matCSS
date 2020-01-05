@@ -11,6 +11,11 @@ html{
   background-attachment: fixed;
 }
 
+/* Important on homepage*/
+#important{
+  border: 5px solid #0091ea;
+}
+
 /* Navigation links custom classes manipulation*/
 .sidenav{
   background: transparent;
@@ -156,6 +161,10 @@ iframe{
   max-width: 100%;
 }
 
+/* Add seperation margin for effect on mobile layouts such as dropdown trigger and  */
+.sepMenus{
+  margin: .2rem;
+}
 /* Sermon homepage golden nuggets */
 p.small{
   font-size: .8em!important;
@@ -275,9 +284,6 @@ p.small{
   background: rgba(240, 240, 240, 0.9);
 }
 
-#theme{
-  text-align: center;
-}
 /* who we are */
 .card-panel img{
   padding: 5px;

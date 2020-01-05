@@ -11,7 +11,7 @@ title : Music | Audios
     <div class="row">
       {%- for article in site.pages -%}
         {%- if article.genre == 'audio' -%}
-          <div class="col s12 m6">
+          <div class="col s12 m6 sepMenus">
             <a href="{{site.baseurl}}{{article.url}}" class="btn"><i class="material-icons">album</i>  {{article.album}}</a>
           </div>
         {%- endif -%}

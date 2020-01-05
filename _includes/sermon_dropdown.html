@@ -2,14 +2,15 @@
   <div class="container">
     <p>Sort by: </p>
     <!-- Dropdown Trigger -->
-    <a class='dropdown-trigger btn' href='#' data-target='byYear'>By Year  <i class="material-icons">arrow_drop_down</i></a>
+    <a class='dropdown-trigger btn sepMenus' href='#' data-target='byYear'>By Year  <i class="material-icons">arrow_drop_down</i></a>
     <a href="#" class="dropdown-trigger btn" data-target='bySeries'>By Series  <i class="material-icons">arrow_drop_down</i></a>
 
     <!-- Dropdown Structure -->
     <ul id='byYear' class='dropdown-content'>
+      <li><a href="{{ site.baseurl }}/sermons/2020/index.html">2020</a></li>
       <li><a href="{{ site.baseurl }}/sermons/2019/index.html">2019</a></li>
     </ul>
-
+    
     <ul id='bySeries' class='dropdown-content'>
       <li><a href="{{ site.baseurl }}/sermons/series/golden_nuggets.html">Golden Nuggets(Swahili)</a></li>
       <li class="divider" tabindex="-1"></li>
