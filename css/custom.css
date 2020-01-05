@@ -238,7 +238,8 @@ p.small{
 /* Capstone Message Tabernacle at homepage */
 .our_name{
   font-family: Lobster two;
-  font-size: 30px;
+  text-align: center;
+  font-size: 2.4em;
   color: rgba(255,255,255,1);
   background-color: rgba(41, 98, 255, 1);
 }

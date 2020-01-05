@@ -11,7 +11,14 @@ layout : sermons
 
 <section class="section sectionSermon">
   <div class="container">
-    <a href="{{ site.baseurl }}/sermons/2019/{{link}}" class="z-depth-3"><i class="blue white-text material-icons">navigate_before</i></a>
+    {% if page.year == 2020 %}
+    {% assign year=2020 %}
+    <a href="{{ site.baseurl }}/sermons/{{year}}/{{link}}" class="z-depth-3"><i
+        class="blue white-text material-icons">navigate_before</i></a>
+    {% else %}
+    {% assign year=2019%}
+    <a href="{{ site.baseurl }}/sermons/{{year}}/{{link}}" class="z-depth-3"><i class="blue white-text material-icons">navigate_before</i></a>
+    {% endif %}
     <h5 class="blue-text">{{page.heading}}</h5>
   </div>
 </section>
