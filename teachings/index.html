@@ -7,7 +7,7 @@ title : Teachings
   <div class="slider" id="t_slider">
     <ul class="slides">
       <li>
-        <img src="../images/wheat.jpg">
+        <img src="../images/wheat.jpg" alt="wheat">
         <div class="caption center-align">
         </div>
       </li>
@@ -25,7 +25,7 @@ title : Teachings
             {%- if article.teachings_type contains 'featured' -%}
               <div class="col s12 m6 l4">
                 <h4 class="center">{{article.title | remove: '| Teachings'}}</h4>
-                <p>{{article.content | truncate: article.tranc}}</p>
+                {{article.content | truncate: article.tranc}}</p>
                 <a href="{{site.baseurl}}{{article.url}}" class="btn white-text">Read More</a>
               </div>
               {% assign my_counter = my_counter | plus: 1 %}
@@ -54,7 +54,7 @@ title : Teachings
           {%- endif -%}
           <div class="col s12 m6 l4">
             <h4 class="center">{{article.title | remove: '| Teachings'}}</h4>
-            <p>{{article.content | truncate: article.tranc}}</p>
+            {{article.content | truncate: article.tranc}}</p>
             <a href="{{site.baseurl}}{{article.url}}" class="btn white-text">Read More</a>
           </div>
           {%- assign my_counter = my_counter | plus: 1 -%}
