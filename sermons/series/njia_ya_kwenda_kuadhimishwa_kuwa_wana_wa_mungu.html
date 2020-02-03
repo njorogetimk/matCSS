@@ -1,0 +1,23 @@
+---
+layout: default
+title: Njia ya Kwenda Kuadhimishwa kwa Wana wa Mungu
+---
+
+{%- include sermon_dropdown.html -%}
+
+<h4 class="center white-text">Njia Ya Kuadhimishwa Kuwa Wana wa Mungu</h4>
+
+<div class="section sectionSermon">
+  <div class="container light-blue z-depth-2">
+    <div class="row">
+      {%- for article in site.pages -%}
+      {%- if article.series == 'The Path to Adoption' -%}
+      <div class="col s12 m6">
+        <p><a href="{{site.baseurl}}{{article.url}}">{{article.subject}}</a></p>
+      </div>
+      {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+
+</div>
