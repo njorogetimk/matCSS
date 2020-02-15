@@ -3,6 +3,7 @@ var domain = document.location.host;
 var newRoot;
 var root = document.getElementById("logo-container");
 var root2 = document.querySelector(".breadcrumb");
+
 // console.log(root2);
 
 switch (domain) {
@@ -19,13 +20,16 @@ switch (domain) {
 
 // Opera Mini Browser detection
 const isOperaMini = navigator.userAgent.indexOf("Opera Mini") > -1;
-console.log(isOperaMini);
 
 if (isOperaMini) {
   let opera = document.querySelector("#opera");
-  opera.style.display = "inherit";
   opera.innerHTML =
     '<p> Please enable <em style = "font-weight:bold"> JavaScript</em ></p>  <p>For <em style="font-weight:bold">Opera Mini</em> users click <a href="opera.html">here</a> for how disable JavaScript</p> <h6 class="center"><a class="red white-text btn" href="opera.html">For Opera Mini Users</a></h6>';
+} else {
+  let opera = document.querySelector("#opera");
+  if (opera) {
+    opera.style.display = "none";
+  }
 }
 
 // navigation Bar
