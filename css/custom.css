@@ -3,44 +3,45 @@
   margin: 0;
   padding: 0;
 }
-html{
+html {
   /* background-image: url("../images/backg.jpg"); */
   background-color: rgba(41, 98, 255, 0.7);
-  background-position:center;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 /* Important on homepage*/
-#important{
+#important {
   border: 5px solid #0091ea;
 }
 
 /* Navigation links custom classes manipulation*/
-.sidenav{
+.sidenav {
   background: transparent;
 }
-.sidenav li{
+.sidenav li {
   line-height: normal;
 }
-.sidenav li a, .sidenav li a i.material-icons{
+.sidenav li a,
+.sidenav li a i.material-icons {
   /* Text made white */
-  color: white!important;
+  color: white !important;
 }
-.sidenav-trigger>i{
+.sidenav-trigger > i {
   color: white;
 }
-.sidenav>li>a>img{
+.sidenav > li > a > img {
   border-radius: 50%;
   height: 150px;
   /* display: none; */
 }
 .sidenav a {
-  font-size: 1.1rem!important;
+  font-size: 1.1rem !important;
 }
 
 /* ABOUT US LINK */
-.aboutus{
+.aboutus {
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   border-bottom-left-radius: 24px;
@@ -50,26 +51,26 @@ html{
   margin-bottom: 30px;
   background-color: #81d4fa;
 }
-.aboutus a{
-  font-size: 1em!important;
+.aboutus a {
+  font-size: 1em !important;
 }
-.aboutus a:hover{
-  background-color: #b3e5fc!important;
-}
-
-#live{
-  display: none;
+.aboutus a:hover {
+  background-color: #b3e5fc !important;
 }
 
 /* Collapsible menu; live to gallery */
-.collapsible, .collapsible-body{
-  background: transparent!important;
+.collapsible,
+.collapsible-body {
+  background: transparent !important;
 }
-.collapsible-body ul li{
+.collapsible-body ul li {
   margin-left: 30px;
 }
 
-.sidenav .collapsible-header:hover,.sidenav li a:hover,.collapsible .active li:hover,.collapsible-header:focus{
+.sidenav .collapsible-header:hover,
+.sidenav li a:hover,
+.collapsible .active li:hover,
+.collapsible-header:focus {
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   border-bottom-left-radius: 24px;
@@ -77,20 +78,21 @@ html{
   background-color: rgba(100, 100, 100, 0.5);
   /* vertical-align: middle; */
 }
-li.bold.active,.sidenav>li>.logo:hover{
+li.bold.active,
+.sidenav > li > .logo:hover {
   background: transparent;
 }
 
 /* ABOUT US BUTTON WHEN ACTIVE */
-li.active>a.about{
-  color: rgb(41, 98, 255)!important;
+li.active > a.about {
+  color: rgb(41, 98, 255) !important;
   background: white;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
 }
-.collapsible .active{
+.collapsible .active {
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   border-bottom-left-radius: 24px;
@@ -98,99 +100,101 @@ li.active>a.about{
   background-color: rgba(100, 100, 100, 0.5);
 }
 /* Material Icons; removing the float and vertical alignment */
-i.material-icons{
-  float: none!important;
+i.material-icons {
+  float: none !important;
   vertical-align: bottom;
   /* position: ; */
 }
 
 /* Disabled link; especially the live link */
-.disabled{
+.disabled {
   pointer-events: none;
   /* background-color: rgba(250, 250, 250, 0.5); */
 }
-.section{
+.section {
   margin: 0 auto;
 }
 
 /* LIMITING THE WIDTH OF THE CONTAINER */
-.container{
-  margin:0 auto;
-  max-width:1280px;
-  width:90%
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
 }
 
 /* The Breadcrumb */
-.theBreadcrumb{
-  background: transparent!important;
+.theBreadcrumb {
+  background: transparent !important;
 }
-.theBreadcrumb a{
-  color: #01579b
+.theBreadcrumb a {
+  color: #01579b;
 }
 /* from ghpages */
-.breadcrumb:last-child{
+.breadcrumb:last-child {
   color: rgb(0, 176, 255);
 }
-.breadcrumb:before{
+.breadcrumb:before {
   /* color:rgba(255,255,255,0.7); */
   color: #607d8b;
 }
 
-footer{
+footer {
   color: white;
   /* position: fixed; */
 }
 
 /* Sermons Section */
-.sermonLinks{
+.sermonLinks {
   color: rgb(3, 169, 244);
 }
-.sectionSermon p{
+.sectionSermon p {
   color: #673ad7;
 }
-.sectionSermon i{
+.sectionSermon i {
   border-radius: 7px;
 }
-.sectionSermon a{
+.sectionSermon a {
   color: rgb(255, 215, 0);
 }
-.lineBreak{
+.lineBreak {
   color: #03a9f4;
 }
-iframe{
+iframe {
   max-width: 100%;
 }
 
 /* Add seperation margin for effect on mobile layouts such as dropdown trigger and  */
-.sepMenus{
-  margin: .2rem;
+.sepMenus {
+  margin: 0.2rem;
 }
 /* Sermon homepage golden nuggets */
-p.small{
-  font-size: .8em!important;
+p.small {
+  font-size: 0.8em !important;
 }
 
 /* Navigation for small devices */
-.navVito a i{
-  -webkit-box-shadow:0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3);
-  box-shadow:0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3);
-  background-color: #2196F3 ;
+.navVito a i {
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  background-color: #2196f3;
   color: white;
   border-radius: 7px;
   vertical-align: middle;
 }
 
 /* MUSIC VIDEOS */
-.music_video .container{
+.music_video .container {
   padding-top: 9px;
 }
 
 /* MUSIC AUDIO */
-#audioMusic{
+#audioMusic {
   display: none;
 }
 
-.albums{
+.albums {
   border-radius: 3px;
   background-color: #2196f3;
   color: white;
@@ -200,159 +204,162 @@ p.small{
 }
 
 /* THE GALLERY */
-.albums .col{
+.albums .col {
   background-color: white;
   margin: 4px auto;
 }
-.albums .btn{
+.albums .btn {
   text-transform: none;
   font-size: 1em;
   border-radius: 15px;
 }
 
 /* Album photos background */
-.photos .col{
+.photos .col {
   background-color: #0091ea;
 }
 
 /* Opera images */
-.opera img{
-  height : 400px;
+.opera img {
+  height: 400px;
   text-align: center;
 }
 
 /* Pagination color */
-.pagination li a{
+.pagination li a {
   color: #fff;
 }
-.pagination li.active a{
+.pagination li.active a {
   color: #fff;
 }
-.pagination li.active{
+.pagination li.active {
   background-color: #82b1ff;
 }
-.pagination li.disabled a{
-  color:#fff;
+.pagination li.disabled a {
+  color: #fff;
 }
 
 /* Capstone Message Tabernacle at homepage */
-.our_name{
+.our_name {
   font-family: Lobster two;
   text-align: center;
   font-size: 2.4em;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   background-color: rgba(41, 98, 255, 1);
 }
 
-.our_name img{
+.our_name img {
   margin-top: 3px;
   margin-bottom: 0px;
   border-radius: 50%;
   background: transparent;
 }
 
-.our_name p{
+.our_name p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 /* Services Section */
-.service{
+.service {
   text-align: center;
 }
 
 @media (max-width: 992px) {
-  .sidenav{
+  .sidenav {
     background-color: rgba(41, 98, 255, 0.7);
   }
-  .section{
+  .section {
     margin: 0 auto;
   }
 }
 
-.mycaption{
+.mycaption {
   color: black;
-  position:absolute;
-  top:15%;
-  left:15%;
-  width:70%;
-  opacity:0;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  opacity: 0;
 }
 
-
 /* Before */
-.section{
+.section {
   background: rgba(240, 240, 240, 0.9);
 }
 
 /* who we are */
-.card-panel img{
+.card-panel img {
   padding: 5px;
 }
 
 /* Slider */
-.indicator-item{
+.indicator-item {
   display: none !important;
 }
 
 /* Bible Quotes */
-e{
+e {
   font-style: italic;
 }
 
 /* Disabled Breadcrumb color */
-#myFlat{
-  color: white!important;
+#myFlat {
+  color: white !important;
 }
 
 /* Teachings  */
-h4,h5{
+h4,
+h5 {
   text-transform: capitalize;
 }
 p {
   font-size: 1.3em !important;
 }
 
-.teaching{
+.teaching {
   border-style: ridge;
   padding: 3px;
 }
 
-.title{
+.title {
   color: white;
   text-decoration: underline;
 }
 
-h6{
+h6 {
   font-size: 1.5em;
   font-weight: none;
   text-decoration: underline;
 }
-#featured .tranc h5, #more .tranc h5{
+#featured .tranc h5,
+#more .tranc h5 {
   display: none;
 }
-#featured .tranc p{
+#featured .tranc p {
   color: white;
 }
 #more .tranc p {
   color: #03a9f4;
 }
-.clearfix{
+.clearfix {
   margin-bottom: 3px;
 }
 
-
 /* My Button */
-.mbtn{
-  border:none;
-  border-radius:2px;
-  display:inline-block;
-  height:100%;
-  line-height:36px;
-  padding:0 16px;
-  vertical-align:middle;
-  -webkit-tap-highlight-color:transparent;
+.mbtn {
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 100%;
+  line-height: 36px;
+  padding: 0 16px;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
 
-  -webkit-box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   background-color: rgb(38, 166, 154);
 }
