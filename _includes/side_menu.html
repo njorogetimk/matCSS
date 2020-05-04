@@ -4,29 +4,41 @@
     <nav class="">
       <div class="nav-wrapper blue accent-4">
         <!-- <a href="#!" class="brand-logo">Logo</a> -->
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
       </div>
     </nav>
   </div>
   <ul class="sidenav sidenav-fixed" id="nav-mobile">
-    <li class="logo"><a id="logo-container" href="{{ site.baseurl }}/" class="brand-logo center"><img src="{{ site.baseurl }}/images/logo.jpg" alt=""></a></li>
-    <li class="bold center aboutus" id="about"><a href="{{ site.baseurl }}/aboutus.html">About</a></li>
-    <li class="bold"><a id="live" href="" class="disabled"><i class="material-icons">videocam</i> Live</a></li>
+    <li class="logo">
+      <a
+        id="logo-container"
+        href="{{ site.baseurl }}/"
+        class="brand-logo center"
+        ><img src="{{ site.baseurl }}/images/logo.jpg" alt=""
+      /></a>
+    </li>
+    <li class="bold center aboutus" id="about">
+      <a href="{{ site.baseurl }}/aboutus.html">About</a>
+    </li>
+    <li class="bold" hidden>
+      <a id="live" href="" class="disabled"
+        ><i class="material-icons">videocam</i> Live</a
+      >
+    </li>
     <li class="no-padding">
       <ul class="collapsible collapsible-accordion">
-        {% include header_teachings.html %}
-
-        {% include header_sermons.html %}
-
-        {% include header_music.html %}
-
-        {% include header_gallery.html %}
+        {% include header_teachings.html %} {% include header_sermons.html %} {%
+        include header_music.html %} {% include header_gallery.html %}
       </ul>
     </li>
 
     <!-- BILLBOARD -->
     <li id="billboardNav" class="bold">
-      <a href="{{ site.baseurl }}/billboard/index.html" class=""><i class="material-icons">notifications</i> Billboard</a>
+      <a href="{{ site.baseurl }}/billboard/index.html" class=""
+        ><i class="material-icons">notifications</i> Billboard</a
+      >
     </li>
   </ul>
 </header>
